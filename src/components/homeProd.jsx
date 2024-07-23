@@ -80,7 +80,7 @@ console.log(myLocation.pathname);
     },[myLocation]);
   return (
     <div className='py-8 px-4 text-center'>
-        <h3 className={`my-8 text-[4rem] font-bold text-primary-color text-center uppercase ${loc.href == "http://localhost:5173/" ? "inline-block" :"hidden"}`}>latest products</h3>
+        <h3 className={`my-8 text-[4rem] font-bold text-primary-color text-center uppercase ${myLocation.pathname == "http://localhost:5173/" ? "inline-block" :"hidden"}`}>latest products</h3>
       
 
         <div className="con-fr my-0 mx-auto">
@@ -99,7 +99,7 @@ console.log(myLocation.pathname);
                 )
              })}
         </div>
-        <Button label='see more ' className={`capitalize py-2 px-6 text-[1.5rem] font-200 mr-4 place-items-center mx-auto my-8 ${loc.href === "http://localhost:5173/" ? "inline-block" :"hidden"}`}></Button>
+        <Button label='see more ' className={`capitalize py-2 px-6 text-[1.5rem] font-200 mr-4 place-items-center mx-auto my-8 ${myLocation.pathname == "http://localhost:5173/" ? "inline-block" :"hidden"}`}></Button>
     </div>
   )
 }
