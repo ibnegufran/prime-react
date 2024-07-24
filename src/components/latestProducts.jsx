@@ -79,7 +79,7 @@ const responsiveOptions = [
   return (
     <>
     <div className="card w-screen text-center flex justify-center items-center  py-8 px-8">
-            <Carousel value={products} className='' numVisible={3} numScroll={3} responsiveOptions={responsiveOptions} itemTemplate={productTemplate} autoplayInterval={3000} containerClassName={'w-[90vw] sm:w-[60vw] xl:w-[40vw] my-0 mx-auto'} contentClassName={''} indicatorsContentClassName={''} header={"Today's products"} prevIcon="text-[2rem]  pi pi-chevron-left" nextIcon="text-[2rem]  pi pi-chevron-right" circular={true} pt={{
+            <Carousel value={products} className='' numVisible={1} numScroll={1} responsiveOptions={responsiveOptions} itemTemplate={productTemplate} autoplayInterval={3000} containerClassName={'w-[90vw] sm:w-[60vw] xl:w-[40vw] my-0 mx-auto'} contentClassName={''} indicatorsContentClassName={''} header={"Today's products"} prevIcon="text-[2rem]  pi pi-chevron-left" nextIcon="text-[2rem]  pi pi-chevron-right" circular={true} pt={{
             
            header:'text-[4rem] md:text-[4.5rem] text-center text-primary-color font-bold uppercase',
            item:'',
