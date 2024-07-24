@@ -7,7 +7,7 @@ const HomeAbout = () => {
     <div className="px-8 h-fit ">
     <div className=' con-fr home-about justify-evenly gap-8 place-items-center'>
 <div className="img flex justify-center">
-    <img src="../public/about2.jpeg" alt="" className='h-[35rem] rounded'/>
+    <img src="/about2.jpeg" alt="" className='h-[35rem] rounded'/>
 </div>
 <div className="content ">
     <h2 className='text-[3rem] md:text-[4rem] uppercase text-primary-colo text-primary-color font-bold'>why choose us ?</h2>

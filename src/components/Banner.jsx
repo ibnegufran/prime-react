@@ -3,7 +3,7 @@ import { TitleContext } from '../context/context'
 const Banner = () => {
   const {title,setTitle}=useContext(TitleContext);
   useEffect(() => {
-    setTitle({ name: "about us",bg_url:"/public/aboutpage.jpg" });
+    setTitle({ name: "about us",bg_url:"/aboutpage.jpg" });
   }, [setTitle]);
 
 

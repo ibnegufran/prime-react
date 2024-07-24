@@ -7,7 +7,7 @@ import Review from './Review'
 const About = () => {
   const {title,setTitle}=useContext(TitleContext);
   useEffect(() => {
-    setTitle(prev=>({...prev, name: "about us",bg_url:"/public/aboutpage2.jpg" }));
+    setTitle(prev=>({...prev, name: "about us",bg_url:"/aboutpage2.jpg" }));
   }, [setTitle]);
   return (
     <div>

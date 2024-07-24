@@ -13,33 +13,33 @@ const {addItem}=useCart();
       id:1,
       name:'bluetooth',
       price:'400',
-      img_url:'../public/pr1.jpeg'
+      img_url:'/pr1.jpeg'
     },
     {
       id:2,
       name:'durable chair',
       price:'400',
-      img_url:'../public/pr2.jpg'
+      img_url:'/pr2.jpg'
     },{
       id:3,
       name:'earphone',
       price:'344',
-      img_url:'../public/pr7.jpg'
+      img_url:'/pr7.jpg'
     },{
       id:4,
       name:'flask bottle',
       price:'349',
-      img_url:'../public/pr9.jpeg'
+      img_url:'/pr9.jpeg'
     },{
       id:5,
       name:'flask bottle',
       price:'600',
-      img_url:'../public/pr10.jpeg'
+      img_url:'/pr10.jpeg'
     },{
       id:6,
       name:'earbuds',
       price:'500',
-      img_url:'../public/pr8.jpg'
+      img_url:'/pr8.jpg'
     },
 ]);
 

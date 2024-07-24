@@ -8,7 +8,7 @@ const Contact = () => {
     setTitle((prev) => ({
       ...prev,
       name: "contact us",
-      bg_url: "/public/contact.jpg",
+      bg_url: "/contact.jpg",
     }));
   }, []);
   return (

@@ -7,7 +7,7 @@ import Banner from './Banner'
 const Shop = () => {
   const {title,setTitle}=useContext(TitleContext);
   useEffect(() => {
-    setTitle(prev=>({...prev, name: "shop your needs",bg_url:"/public/shop.jpg" }));
+    setTitle(prev=>({...prev, name: "shop your needs",bg_url:"/shop.jpg" }));
   }, []);  return (
     <div>
       <Banner />
