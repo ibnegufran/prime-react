@@ -30,12 +30,12 @@ const Cart = () => {
                                 <td className='text-center text-[1.4rem] md:text-[1.8rem] border-1 border-gray-200 py-2 px-1 md:p-2'>Quantity ({ele.quantity})</td>
                                 {/* <td className='text-center text-[1.4rem] md:text-[1.8rem] border-1 border-gray-200 py-2 px-1 md:p-2'>sub total (₹{ele.itemTotal})</td> */}
                                 <td className='text-center text-[1.4rem] md:text-[1.8rem] border-1 border-gray-200 py-2 px-0 md:p-2'>
-                                    <Button className='m-3 py-2 px-3 md:py-2 md:px-4 font-bold text-[1.5rem]  md:mx-2 pi pi-angle-up md:pi-plus block' severity="secondary md:info" onClick={()=>updateItemQuantity(ele.id,ele.quantity +1)}></Button>
+                                    <Button className='m-3 py-2 px-3 md:py-2 md:px-4 font-bold text-[1.5rem]  md:mx-2 pi pi-angle-up md:pi-plus block  md:inline-block' severity="secondary md:info" onClick={()=>updateItemQuantity(ele.id,ele.quantity +1)}></Button>
 
-                                    <Button className='m-3 px-3 md:my-2 py-2 md:px-4  text-[1.5rem] pi pi-trash block' severity="danger"  onClick={()=>removeItem(ele.id)}></Button>
+                                    <Button className='m-3 px-3 md:my-2 py-2 md:px-4  text-[1.5rem] pi pi-trash block  md:inline-block' severity="danger"  onClick={()=>removeItem(ele.id)}></Button>
 
 
-                                    <Button className='m-3 py-2 px-3 md:py-2 md:px-4 font-bold text-[1.5rem] md:mx-2  block pi pi-angle-down md:pi-plus' severity="secondary md:info"  onClick={()=>updateItemQuantity(ele.id, ele.quantity -1)}></Button>
+                                    <Button className='m-3 py-2 px-3 md:py-2 md:px-4 font-bold text-[1.5rem] md:mx-2  block  md:inline-block pi pi-angle-down md:pi-plus' severity="secondary md:info"  onClick={()=>updateItemQuantity(ele.id, ele.quantity -1)}></Button>
                                 </td>
 
 
