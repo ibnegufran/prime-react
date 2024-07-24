@@ -17,49 +17,49 @@ console.log(myLocation.pathname);
             id:1,
             name:'bluetooth',
             price:'400',
-            img_url:'../public/pr1.jpeg'
+            img_url:'/pr1.jpeg'
           },
           {
             id:2,
             name:'durable chair',
             price:'400',
-            img_url:'../public/pr2.jpg'
+            img_url:'/pr2.jpg'
           },{
             id:3,
             name:'earphone',
             price:'344',
-            img_url:'../public/pr7.jpg'
+            img_url:'/pr7.jpg'
           },{
             id:4,
             name:'flask bottle',
             price:'349',
-            img_url:'../public/pr9.jpeg'
+            img_url:'/pr9.jpeg'
           },{
             id:5,
             name:'flask bottle',
             price:'600',
-            img_url:'../public/pr10.jpeg'
+            img_url:'/pr10.jpeg'
           },{
             id:6,
             name:'earbuds',
             price:'500',
-            img_url:'../public/pr8.jpg'
+            img_url:'/pr8.jpg'
           },
           {
-            id:2,
+            id:7,
             name:'first product',
             price:'34',
-            img_url:'../public/pr2.jpg'
+            img_url:'/pr2.jpg'
           },{
-            id:3,
+            id:8,
             name:'first product',
             price:'34',
-            img_url:'../public/pr7.jpg'
+            img_url:'/pr7.jpg'
           },{
-            id:4,
+            id:9,
             name:'first product',
             price:'34',
-            img_url:'../public/pr9.jpeg'
+            img_url:'/pr9.jpeg'
           }
     ])
     // const [sliced,setSliced]=useState(data.slice(0,6));
@@ -80,10 +80,10 @@ console.log(myLocation.pathname);
     },[myLocation]);
   return (
     <div className='py-8 px-4 text-center'>
-        <h3 className={`my-8 text-[4rem] font-bold text-primary-color text-center uppercase ${myLocation.pathname == "http://localhost:5173/" ? "inline-block" :"hidden"}`}>latest products</h3>
+        <h3 className={`my-8 text-[4rem] font-bold text-primary-color text-center uppercase ${myLocation.pathname == "/" ? "inline-block" :"hidden"}`}>latest products</h3>
       
 
-        <div className="con-fr my-0 mx-auto">
+        <div className="con-fr my-0 mx-auto px-3">
              {data.map((ele,index)=>{
                 return(
                     <Card  key={index} className="shadow-md border-1 border-200-gray text-center p-4">
@@ -99,7 +99,7 @@ console.log(myLocation.pathname);
                 )
              })}
         </div>
-        <Button label='see more ' className={`capitalize py-2 px-6 text-[1.5rem] font-200 mr-4 place-items-center mx-auto my-8 ${myLocation.pathname == "http://localhost:5173/" ? "inline-block" :"hidden"}`}></Button>
+        <Button label='see more ' className={`capitalize py-2 px-6 text-[1.5rem] font-200 mr-4 place-items-center mx-auto my-8 ${myLocation.pathname == "/" ? "inline-block" :"hidden"}`}></Button>
     </div>
   )
 }
