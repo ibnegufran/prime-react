@@ -41,7 +41,7 @@ const Contact = () => {
           </div>
           <div className="col2">
             <h2 className="text-[3rem] capitalize font-bold text-primary-color">contact us</h2>
-            <form action="" className="flex flex-col justify-start">
+            <form action="" className="flex flex-col  md:justify-start">
               <input type="text" placeholder="enter your name" className=" w-[90vw] md:w-[40vw] py-3 px-3 text-[1.5rem] rounded shadow-md outline-none my-3 capitalize " />
               <input type="number" placeholder="enter your number" className=" w-[90vw] md:w-[40vw] py-3 px-3 text-[1.5rem] rounded shadow-md outline-none my-3 capitalize " />
               <input type="text" placeholder="enter your subject" className=" w-[90vw] md:w-[40vw] py-3 px-3 text-[1.5rem] rounded shadow-md outline-none my-3 capitalize " />
