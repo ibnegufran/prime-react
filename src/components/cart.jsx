@@ -1,5 +1,6 @@
 import { Button } from 'primereact/button';
 import React from 'react'
+import { Link } from 'react-router-dom';
 import {useCart} from 'react-use-cart'
 
 const Cart = () => {
@@ -54,7 +55,7 @@ const Cart = () => {
                 <Button className='py-2 px-4  text-[2rem] mx-auto' severity="danger"   onClick={()=>emptyCart()} >delete all</Button>
 
 
-<Button className='py-2 px-4 text-[2rem] mx-3' severity="success" >buy now</Button>
+<Link to="/buy"><Button className='py-2 px-4 text-[2rem] mx-3' severity="success" >buy now</Button></Link>
             </div>
 
         </div>

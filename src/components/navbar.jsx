@@ -68,7 +68,7 @@ const Navbar = () => {
 
     </div>
 </div>
-<Link to="https://wa.me/7507485880" className='shadow-xl  bg-white p-4 rounded-full fixed  top-[90%] right-[8%] border-1 border-gray-300'><span className='pi pi-whatsapp  text-4xl text-[#075E54]'></span></Link>
+<Link to="https://wa.me/7507485880" className='shadow-xl  bg-white p-4 rounded-full fixed top-[70%] md:top-[90%] right-[8%] border-1 border-gray-300  z-50'><span className='pi pi-whatsapp  text-4xl text-[#075E54]'></span></Link>
 
 </>
 

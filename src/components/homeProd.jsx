@@ -99,7 +99,7 @@ console.log(myLocation.pathname);
                 )
              })}
         </div>
-        <Button label='see more ' className={`capitalize py-2 px-6 text-[1.5rem] font-200 mr-4 place-items-center mx-auto my-8 ${myLocation.pathname == "/" ? "inline-block" :"hidden"}`}></Button>
+        <Link to="/shop"><Button label='see more ' className={`capitalize py-2 px-6 text-[1.5rem] font-200 mr-4 place-items-center mx-auto my-8 ${myLocation.pathname == "/" ? "inline-block" :"hidden"}`}></Button></Link>
     </div>
   )
 }
