@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react'
 import { Dialog } from 'primereact/dialog';
 import { VisibleContext } from '../../context/context';
+import toast from 'react-hot-toast';
 const UpdateProduct = ({product,getSingleProduct}) => {
   const {visible, setVisible} = useContext(VisibleContext)
   console.log(product)
@@ -10,6 +11,19 @@ if (!product || product.length === 0) {
   return null; // Render nothing if product is not yet available
 }
 
+const updateProductHandler=async(e)=>{
+try {
+  e.preventDefault();
+  
+} catch (error) {
+  console.log(error);
+  toast.error("something went wrong",{
+    duration:2000,
+    position: 'top-center',
+      className: 'text-[1.5rem]',
+  })
+}
+}
 
 
 
@@ -24,7 +38,7 @@ if (!product || product.length === 0) {
       }}
       >
     <div>
-      <form action="" className='w-[50%]  flex mx-auto mt-8 flex-column justify-around items-center px-6 border-1 py-4 rounded-md shadow-md my-4' >
+      <form action="" className='w-[50%]  flex mx-auto mt-8 flex-column justify-around items-center px-6 border-1 py-4 rounded-md shadow-md my-4' onSubmit={updateProductHandler}>
         <h1 className='text-[3rem] text-primary-color font-bold'>update product</h1>
         <img src={`http://localhost:8080/api/v1/product/get-image/${product[0]._id}`} alt="" className='h-[30rem]'/>
         <input type="text" className='w-full p-3 outline-none rounded-md text-[1.5rem] my-3 shadow-sm border-1'  placeholder='please enter product name' name='name' value={product[0].name}/>
